@@ -293,7 +293,7 @@ class Cli {
           type: 'list',
           name: 'vehicleToTow',
           message: 'Select a vehicle to tow',
-          choices: this.vehicles.map(vehicle => ({
+          choices: towableVehicles.map(vehicle => ({
             name: `${vehicle.vin} -- ${vehicle.make} ${vehicle.model}`,
             value: vehicle,
           })),
@@ -414,15 +414,15 @@ class Cli {
             }
             // Statement to perform the wheelie action if the selected vehicle is a motorbike
           } else if (answers.action === 'Do a wheelie') {
-            if(selectedVehicle instanceof Motorbike) {
+            if (selectedVehicle instanceof Motorbike) {
               selectedVehicle.wheelie();
             } else {
               console.log('Only motorbikes can do a wheelie.');
             }
           }
-        // TODO: add statements to perform the tow action only if the selected vehicle is a truck. Call the findVehicleToTow method to find a vehicle to tow and pass the selected truck as an argument. After calling the findVehicleToTow method, you will need to return to avoid instantly calling the performActions method again since findVehicleToTow is asynchronous.
-        // TODO: add statements to perform the wheelie action only if the selected vehicle is a motorbike
-        else if (answers.action === 'Select or create another vehicle') {
+          // TODO: add statements to perform the tow action only if the selected vehicle is a truck. Call the findVehicleToTow method to find a vehicle to tow and pass the selected truck as an argument. After calling the findVehicleToTow method, you will need to return to avoid instantly calling the performActions method again since findVehicleToTow is asynchronous.
+          // TODO: add statements to perform the wheelie action only if the selected vehicle is a motorbike
+          else if (answers.action === 'Select or create another vehicle') {
             // start the cli to return to the initial prompt if the user wants to select or create another vehicle
             this.startCli();
             return;
