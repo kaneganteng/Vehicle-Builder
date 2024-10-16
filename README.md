@@ -28,8 +28,8 @@
   * Print the details of a vehicle, vehicle actions such as accelerate, decelerate, start, stop, reverse, taking a turn, do a wheelie if the vehicle is a motorbike, and towing another vehicle if the selected vehicle is a truck.
   ## How to Contribute
   You can reach out to me through my information below.
-  ## Test
-  Coming soon.
+  ## Test / Walkthrough Video of the Application
+  Walkthrough Video Link: https://drive.google.com/file/d/1ZD2WV0GEtDgvC_8ItxZtm8o3jdHhebLW/view?usp=sharing
   ## Questions
   If you have any questions, do not hesitate to send an email
   * Name: Kane Esasta
